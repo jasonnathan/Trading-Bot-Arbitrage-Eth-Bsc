@@ -1,14 +1,4 @@
-require('d[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Missing script: "start"
-[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m 
-[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Did you mean one of these?
-[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     npm star # Mark your favorite packages
-[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     npm stars # View packages marked as favorites
-[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m 
-[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m To see a list of scripts, run:
-[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m   npm run
-[0m
-[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m A complete log of this run can be found in: /home/runner/.npm/_logs/2024-05-13T15_45_48_259Z-debug-0.log
-[0m [?25lotenv').config()
+require('dotenv').config()
 const Web3 = require('web3')
 const { ChainId, Fetcher, WETH, Route, Trade, TokenAmount, TradeType, Percent } = require('@uniswap/sdk')
 const ethers = require('ethers')
