@@ -141,7 +141,7 @@
   CodeMirror.defineExtension("wrapRange", function(from, to, options) {
     return wrapRange(this, from, to, options || {});
   });
-
+ // If this isn't broken, or is broken at a different point, remove old break
   CodeMirror.defineExtension("wrapParagraphsInRange", function(from, to, options) {
     options = options || {};
     var cm = this, paras = [];
