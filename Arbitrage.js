@@ -3,7 +3,6 @@ const Web3 = require('web3')
 const { ChainId, Fetcher, WETH, Route, Trade, TokenAmount, TradeType, Percent } = require('@uniswap/sdk')
 const ethers = require('ethers')
 const fs = require('fs')
-//const assert = require('assert');
 
 let divider = "\n------------------------------------------------------\n"
 
@@ -89,6 +88,7 @@ async function run(){
         const transactionInput = transactionDetails.input
 
         var path = 'transactions_hashes.txt';
+		// readhash
         var text = fs.readFileSync(path).toString();
         var lines = text.split('\n');
         var newlines_count = lines.length - 1;
