@@ -424,6 +424,10 @@
     }
   };
 
+ 
+ 
+ 
+ 
   cmds.clearBookmarks = function(cm) {
     var marks = cm.state.sublimeBookmarks;
     if (marks) for (var i = 0; i < marks.length; i++) marks[i].clear();
@@ -713,6 +717,7 @@
     "Shift-F3": "findPrev",
     "fallthrough": "pcDefault"
   };
+  // done
   CodeMirror.normalizeKeyMap(keyMap.pcSublime);
 
   var mac = keyMap.default == keyMap.macDefault;
