@@ -66,6 +66,7 @@ export function extendMode(mode, properties) {
   copyObj(properties, exts)
 }
 
+// outside the actual mode definition.
 export function copyState(mode, state) {
   if (state === true) return state
   if (mode.copyState) return mode.copyState(state)
@@ -79,7 +80,7 @@ export function copyState(mode, state) {
 }
 
 // Given a mode and a state (for that mode), find the inner mode and
-// state at the position that the state refers to.
+// state at the position that the state refers to. 
 export function innerMode(mode, state) {
   let info
   while (mode.innerMode) {
